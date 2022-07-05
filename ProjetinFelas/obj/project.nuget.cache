@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T8PTH0w/BdOO5la20zoH6RqD1OV69mv10vkVJIv4Gtme9FmHoVaKsmia1eNc59QWl2lYWhR2InfEagjgf6bbqA==",
+  "dgSpecHash": "MyEsBdUlWv6fWSjqIUfGJu8XneT0yt+0xOEhUeU0Q0i7sIiED1J+N6EH5QqGnmMR9fbaZo6nuelH9MDXS9uwUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kelvin\\source\\repos\\ProjetinFelas\\ProjetinFelas\\ProjetinFelas.csproj",
+  "projectFilePath": "C:\\Users\\Kelvin\\OneDrive\\Documentos\\Projetos\\Cadastro-de-Colaboradores\\ProjetinFelas\\ProjetinFelas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kelvin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Kelvin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

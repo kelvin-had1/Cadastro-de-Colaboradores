@@ -35,13 +35,41 @@ namespace ProjetinFelas.Camada_de_Conexão
                 MessageBox.Show("Erro: " + ex.ToString());
                 
             }
-            
+
+        }
+
+        public static DataTable getUsuarios()
+        {
+            DataTable dt = new DataTable();
+
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString = Conexao.stringconexao;
+
+            string VstrSQL = "select * from TB_USUARIO";
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(VstrSQL, conn);
+                da.Fill(dt);
+
+            }
+            catch (Exception err)
+            {
+
+                MessageBox.Show("Erro de Conexão " + err.ToString());
+            }
+
+            finally
+            {
+                if (conn.State != ConnectionState.Closed) 
+                {
+                    conn.Close();
+                }
+            }
 
 
 
 
-
-
+            return dt;
         }
     }
 }

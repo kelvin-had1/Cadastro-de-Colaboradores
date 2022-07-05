@@ -40,5 +40,15 @@ namespace ProjetinFelas
 
             conectar.connect();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            frmListarUsuarios frmListaUsuarios = new frmListarUsuarios();
+            
+            frmListaUsuarios.Show();
+            
+            
+
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnListar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             // btnTestar
             // 
             this.btnTestar.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTestar.Location = new System.Drawing.Point(470, 232);
+            this.btnTestar.Location = new System.Drawing.Point(461, 232);
             this.btnTestar.Name = "btnTestar";
             this.btnTestar.Size = new System.Drawing.Size(99, 36);
             this.btnTestar.TabIndex = 1;
@@ -118,11 +119,23 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Digite sua senha";
             // 
+            // btnListar
+            // 
+            this.btnListar.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnListar.Location = new System.Drawing.Point(336, 232);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(99, 36);
+            this.btnListar.TabIndex = 4;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnListar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnTestar);
@@ -148,5 +161,6 @@
         private GroupBox groupBox2;
         private TextBox txtSenha;
         private Label label2;
+        private Button btnListar;
     }
 }
