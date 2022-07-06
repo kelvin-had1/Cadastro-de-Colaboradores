@@ -10,7 +10,7 @@ namespace ProjetinFelas.Camada_de_negócios
 {
     class Usuario
     {
-        public bool validaDados(string nome, string senha)
+        public static bool validaDados(string nome, string senha)
         {
             if (nome == "" || senha == "")
             {
@@ -33,7 +33,29 @@ namespace ProjetinFelas.Camada_de_negócios
                 return;
             }
 
-            MessageBox.Show("Aconteceu algum erro interno!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);                       
+            MessageBox.Show("Aconteceu algum erro interno!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        public static void apagarUsuario(int idUser)
+        {
+            TB_Usuario.apagarUsuario(idUser);
+        }
+
+        public static void atualizarUsuario(string nome, string senha, int idUser)
+        {
+            bool camposValidos = validaDados(nome, senha);
+            if (camposValidos)
+            {
+
+                TB_Usuario.atualizaUsuario(nome, senha, idUser);
+                return;
+            }
+            else if (!camposValidos)
+            {
+                return;
+            }
+
+            MessageBox.Show("Aconteceu algum erro interno!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
         public static DataTable carregaUsuarios()

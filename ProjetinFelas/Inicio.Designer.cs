@@ -37,6 +37,7 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnListar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +45,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(214, 232);
+            this.button1.Location = new System.Drawing.Point(214, 254);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 36);
             this.button1.TabIndex = 0;
@@ -55,7 +56,7 @@
             // btnTestar
             // 
             this.btnTestar.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTestar.Location = new System.Drawing.Point(461, 232);
+            this.btnTestar.Location = new System.Drawing.Point(461, 254);
             this.btnTestar.Name = "btnTestar";
             this.btnTestar.Size = new System.Drawing.Size(99, 36);
             this.btnTestar.TabIndex = 1;
@@ -67,7 +68,7 @@
             // 
             this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(158, 60);
+            this.groupBox1.Location = new System.Drawing.Point(158, 82);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 2;
@@ -95,7 +96,7 @@
             // 
             this.groupBox2.Controls.Add(this.txtSenha);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(419, 60);
+            this.groupBox2.Location = new System.Drawing.Point(419, 82);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(201, 100);
             this.groupBox2.TabIndex = 3;
@@ -122,7 +123,7 @@
             // btnListar
             // 
             this.btnListar.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnListar.Location = new System.Drawing.Point(336, 232);
+            this.btnListar.Location = new System.Drawing.Point(336, 254);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(99, 36);
             this.btnListar.TabIndex = 4;
@@ -130,11 +131,22 @@
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(346, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 30);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Criar";
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -148,6 +160,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -162,5 +175,6 @@
         private TextBox txtSenha;
         private Label label2;
         private Button btnListar;
+        private Label label3;
     }
 }

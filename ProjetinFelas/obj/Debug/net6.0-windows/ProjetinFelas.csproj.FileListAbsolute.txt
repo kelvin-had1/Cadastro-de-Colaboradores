@@ -47,3 +47,4 @@ C:\Users\Kelvin\OneDrive\Documentos\Projetos\Cadastro-de-Colaboradores\ProjetinF
 C:\Users\Kelvin\OneDrive\Documentos\Projetos\Cadastro-de-Colaboradores\ProjetinFelas\obj\Debug\net6.0-windows\ProjetinFelas.csproj.CopyComplete
 C:\Users\Kelvin\OneDrive\Documentos\Projetos\Cadastro-de-Colaboradores\ProjetinFelas\obj\Debug\net6.0-windows\ProjetinFelas.genruntimeconfig.cache
 C:\Users\Kelvin\OneDrive\Documentos\Projetos\Cadastro-de-Colaboradores\ProjetinFelas\obj\Debug\net6.0-windows\ref\ProjetinFelas.dll
+C:\Users\Kelvin\OneDrive\Documentos\Projetos\Cadastro-de-Colaboradores\ProjetinFelas\obj\Debug\net6.0-windows\ProjetinFelas.frmEditarUsuario.resources

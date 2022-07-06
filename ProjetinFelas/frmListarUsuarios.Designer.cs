@@ -32,6 +32,7 @@
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataG)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,11 +43,12 @@
             this.ID,
             this.Nome,
             this.Senha});
-            this.DataG.Location = new System.Drawing.Point(159, 54);
+            this.DataG.Location = new System.Drawing.Point(156, 88);
             this.DataG.Name = "DataG";
             this.DataG.RowTemplate.Height = 25;
             this.DataG.Size = new System.Drawing.Size(499, 280);
             this.DataG.TabIndex = 0;
+            this.DataG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataG_CellClick);
             // 
             // ID
             // 
@@ -68,11 +70,22 @@
             this.Senha.ReadOnly = true;
             this.Senha.Width = 135;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(351, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 30);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "listar";
+            // 
             // frmListarUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.DataG);
             this.Name = "frmListarUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -80,6 +93,7 @@
             this.Load += new System.EventHandler(this.frmListarUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataG)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -89,5 +103,6 @@
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn Nome;
         private DataGridViewTextBoxColumn Senha;
+        private Label label3;
     }
 }

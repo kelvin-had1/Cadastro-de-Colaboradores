@@ -22,6 +22,11 @@ namespace ProjetinFelas
             txtSenha.PasswordChar = '*';
         }
 
+        private void resetaCampos()
+        {
+            txtNome.Text = "";
+            txtSenha.Text = "";
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             string nome = txtNome.Text;
@@ -29,8 +34,9 @@ namespace ProjetinFelas
             
             Usuario usuario = new Usuario();
 
-
             usuario.gravarUsuario(nome, senha);
+            resetaCampos();
+            
             
         }
 
@@ -45,7 +51,7 @@ namespace ProjetinFelas
         {
             frmListarUsuarios frmListaUsuarios = new frmListarUsuarios();
             
-            frmListaUsuarios.Show();
+            frmListaUsuarios.ShowDialog();
             
             
 

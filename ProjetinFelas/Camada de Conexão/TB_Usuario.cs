@@ -38,6 +38,53 @@ namespace ProjetinFelas.Camada_de_Conexão
 
         }
 
+        public static void apagarUsuario(int idUser)
+        {
+            string VstrSQL = "delete TB_USUARIO where ID = " + idUser;
+            SqlConnection conn = new SqlConnection(Conexao.stringconexao);
+            SqlCommand cmd = new SqlCommand(VstrSQL, conn);
+
+            conn.Open();
+            try
+            {
+                int i = cmd.ExecuteNonQuery();
+                if(i > 0)
+                {
+                    MessageBox.Show("Usuário apagado com sucesso!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Não foi possível apagar o usuário: " + err.ToString(), "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+        }
+
+        public static void atualizaUsuario(string nome, string senha, int idUser)
+        {
+            string VstrSQL = "update TB_USUARIO set NOME = '" + nome + "', SENHA = '" + senha + "' where ID = " + idUser + "";
+            SqlConnection conn = new SqlConnection(Conexao.stringconexao);
+            SqlCommand cmd = new SqlCommand(VstrSQL, conn);
+            MessageBox.Show(VstrSQL);
+            conn.Open();
+            try
+            {
+                int i = cmd.ExecuteNonQuery();
+                if(i > 0)
+                {
+                    MessageBox.Show("Usuário atualizado com sucesso!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Erro: " + err.ToString());
+            }
+
+        }
+
         public static DataTable getUsuarios()
         {
             DataTable dt = new DataTable();
